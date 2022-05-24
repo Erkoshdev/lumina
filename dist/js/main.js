@@ -24,10 +24,6 @@ $(document).ready(function () {
     $('.tide').addClass('container-cut')
   }
 
-  //динамичная позиция main-slider nav-btn
-  let leftDistance = $('.slider-title h2').position().left + 5;
-  $('.slider-nav-btn').css('left', leftDistance);
-
 })
 
 //Открыть меню на mobile

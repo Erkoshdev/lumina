@@ -1,5 +1,12 @@
 body {
   font-family: 'Inter';
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  flex: 1;
 }
 
 .btn-custom {
@@ -20,6 +27,13 @@ body {
   font-size: 40px;
   line-height: 48px;
   color: #333333;
+}
+
+.main-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #444D6D;
 }
 
 .container-cut {
@@ -80,3 +94,39 @@ body {
 .text-link:hover:after {
   transform: translateY(-50%) translateX(7px) scale(1.1);
 }
+
+.breadcrumb {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.breadcrumb a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #6E7F9C;
+}
+
+.breadcrumb li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #6E7F9C;
+  position: relative;
+}
+
+.breadcrumb li + li {
+  padding-left: 50px;
+}
+
+.breadcrumb li + li:before {
+  content: '';
+  background: url("../img/icon/chevron-right-gray.svg");
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+}
+

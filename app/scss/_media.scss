@@ -22,6 +22,11 @@
   .footer-social li + li {
     margin-left: 25px;
   }
+  .lumina-add .add-right:before {
+    width: 250px;
+    height: 250px;
+  }
+
 }
 
 //desktops
@@ -123,6 +128,14 @@
   .boq {
     top: 31%;
     left: 77%;
+  }
+  .lumina-add .add-right {
+    margin-left: 40px;
+  }
+  .lumina-add .add-right:before {
+    width: 200px;
+    height: 200px;
+    top: 46%;
   }
 }
 
@@ -384,6 +397,117 @@
   .news-card {
     width: calc(100% - 20px);
   }
+  .breadcrumb {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+  .complex-notice .main-title {
+    font-size: 26px;
+  }
+  .main-text {
+    font-size: 14px;
+  }
+  .partners {
+    margin-top: 60px;
+  }
+  .notice-card {
+    margin-top: 60px;
+    padding: 25px;
+  }
+  .notice-card-img {
+    width: 100px;
+    height: 100px;
+  }
+  .notice-card-caption {
+    margin-left: 25px;
+  }
+  .notice-card-caption p {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .info-card {
+    padding: 40px 30px;
+  }
+  .info-card-caption h6 {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  .info-card-caption p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  .info-card-img {
+    max-width: 240px;
+    left: 60%;
+  }
+  .provider {
+    margin-top: 40px;
+  }
+  .indicators-nav {
+    margin-top: 30px;
+  }
+  .indicators-nav li p {
+    font-size: 30px;
+  }
+  .indicators-nav li span {
+    font-size: 14px;
+  }
+  .indicators-nav li + li {
+    margin-left: 40px;
+  }
+  .provider-scheme {
+    margin-top: -100px;
+  }
+  .about-page .img-notice {
+    margin-top: 60px;
+  }
+  .notice-caption .main-title {
+    font-size: 24px;
+  }
+  .notice-caption .notice-caption-item {
+    margin-top: 10px;
+  }
+  .img-notice .insight-item {
+    margin-top: 10px;
+  }
+  .img-notice .insight-item-top h6 {
+    font-size: 15px;
+  }
+  .about-page {
+    padding-bottom: 60px;
+  }
+  .service-page .img-notice + .img-notice {
+    margin-top: 60px;
+  }
+  .service-page .subscribe-lg {
+    margin-top: 60px;
+  }
+  .service-page {
+    padding-bottom: 60px;
+  }
+  .lumina-add .add-right {
+    margin-left: 40px;
+  }
+  .lumina-add .add-right:before {
+    width: 190px;
+    height: 190px;
+    top: 46%;
+  }
+  .partners-page .partners {
+    margin-top: 60px;
+  }
+  .partners-page .quality-card {
+    margin-top: 60px;
+  }
+  .partners-page .img-notice {
+    margin-top: 70px;
+  }
+  .partners-page .subscribe-lg {
+    margin-top: 60px;
+  }
+  .partners-page {
+    padding-bottom: 60px;
+  }
 }
 
 //landscape phones
@@ -400,7 +524,7 @@
     min-height: 60px;
   }
   .header-logo img {
-    max-width: 80px;
+    max-width: 90px;
   }
   .mobile-menu {
     position: fixed;
@@ -717,6 +841,152 @@
   .news-card-img img {
     max-height: 140px;
   }
+  .breadcrumb {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .complex-notice .main-title {
+    font-size: 20px;
+    padding-left: 15px;
+  }
+  .complex-notice-caption .notice-caption-item {
+    margin-top: 10px;
+  }
+  .main-text {
+    font-size: 13px;
+  }
+  .partners {
+    margin-top: 30px;
+  }
+  .partners-list-item + .partners-list-item {
+    margin-left: 15px;
+  }
+  .partners-list img {
+    max-height: 30px;
+  }
+  .notice-card {
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .notice-card-img {
+    width: 80px;
+    height: 80px;
+  }
+  .notice-card-caption {
+    margin-left: 20px;
+  }
+  .notice-card-caption p {
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .info-card {
+    padding: 25px;
+  }
+  .info-card-caption h6 {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .info-card-caption p {
+    font-size: 13px;
+    line-height: 120%;
+  }
+  .info-card-img {
+    max-width: 200px;
+    left: 60%;
+  }
+  .provider {
+    margin-top: 30px;
+  }
+  .indicators-nav {
+    margin-top: 15px;
+  }
+  .indicators-nav li p {
+    font-size: 24px;
+  }
+  .indicators-nav li span {
+    font-size: 13px;
+  }
+  .indicators-nav li + li {
+    margin-left: 20px;
+  }
+  .provider-scheme {
+    margin-top: -50px;
+  }
+  .about-page .img-notice {
+    margin-top: 30px;
+  }
+  .img-notice .notice-left {
+    padding-right: 20px;
+  }
+  .img-notice .notice-right {
+    padding-left: 20px;
+  }
+  .notice-caption .main-title {
+    font-size: 24px;
+  }
+  .notice-caption .notice-caption-item {
+    margin-top: 10px;
+  }
+  .img-notice .insight-item {
+    margin-top: 10px;
+    padding: 15px;
+  }
+  .img-notice .insight-item-top h6 {
+    font-size: 14px;
+    line-height: 110%;
+  }
+  .img-notice .insight-item-content p {
+    font-size: 13px;
+  }
+  .about-page {
+    padding-bottom: 60px;
+  }
+  .service-page .img-notice + .img-notice {
+    margin-top: 50px;
+  }
+  .service-page .partners {
+    margin-top: 50px;
+  }
+  .service-page .subscribe-lg {
+    margin-top: 40px;
+  }
+  .service-page {
+    padding-bottom: 50px;
+  }
+  .lumina-add .main-text {
+    margin-top: 20px;
+  }
+  .lumina-add .btn-wrapper {
+    margin-top: 20px;
+    display: block;
+  }
+  .lumina-add .btn-wrapper button + button {
+    margin-top: 15px;
+  }
+  .lumina-add .btn-wrapper button {
+    width: 100%;
+  }
+  .lumina-add .add-right {
+    margin-left: 20px;
+  }
+  .lumina-add .add-right::before {
+    content: none;
+  }
+  .partners-page .partners {
+    margin-top: 40px;
+  }
+  .partners-page .quality-card {
+    margin-top: 50px;
+  }
+  .partners-page .img-notice {
+    margin-top: 60px;
+  }
+  .partners-page .subscribe-lg {
+    margin-top: 50px;
+  }
+  .partners-page {
+    padding-bottom: 40px;
+  }
 }
 
 //phones
@@ -733,7 +1003,7 @@
     min-height: 60px;
   }
   .header-logo img {
-    max-width: 80px;
+    max-width: 90px;
   }
   .mobile-menu {
     position: fixed;
@@ -830,6 +1100,9 @@
   header.header-light .header-callback span {
     color: #333;
   }
+  footer {
+    padding: 20px 0;
+  }
   .footer-logo img {
     max-width: 110px;
   }
@@ -858,7 +1131,7 @@
   }
   .footer-nav li + li {
     margin-left: 0;
-    margin-top: 15px;
+    margin-top: 12px;
   }
   .footer-phone {
     width: fit-content;
@@ -879,9 +1152,6 @@
     margin-left: 0;
     margin-top: 10px;
   }
-
-
-
   .main-slider-item {
     padding-top: 250px;
   }
@@ -1205,9 +1475,206 @@
   .main-holder {
     padding-bottom: 40px;
   }
-}
-
-//Iphone 5
-@media (max-width: 320px) {
-
+  .breadcrumb {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .complex-notice {
+    flex-direction: column;
+  }
+  .complex-notice-img {
+    order: 1;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .complex-notice-caption {
+    order: 2;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .complex-notice .main-title {
+    font-size: 17px;
+    padding-left: 15px;
+  }
+  .complex-notice .main-title::before {
+    height: calc(100% - 6px);
+  }
+  .complex-notice-caption .notice-caption-item {
+    margin-top: 5px;
+  }
+  .main-text {
+    font-size: 13px;
+  }
+  .partners {
+    margin-top: 30px;
+  }
+  .partners-list-item + .partners-list-item {
+    margin-left: 15px;
+  }
+  .partners-list img {
+    max-height: 25px;
+  }
+  .notice-card {
+    margin-top: 30px;
+    padding: 15px;
+  }
+  .notice-card-img {
+    width: 70px;
+    height: 70px;
+  }
+  .notice-card-caption {
+    margin-left: 15px;
+  }
+  .notice-card-caption p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  .info-card {
+    padding: 15px;
+  }
+  .info-card-caption h6 {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .info-card-caption p {
+    font-size: 13px;
+    line-height: 120%;
+  }
+  .info-card-caption {
+    padding-right: 0;
+    width: 100%;
+  }
+  .info-card-img {
+    display: none;
+  }
+  .info-card-line {
+    display: none;
+  }
+  .provider {
+    margin-top: 20px;
+  }
+  .indicators-nav {
+    margin-top: 10px;
+  }
+  .indicators-nav li p {
+    font-size: 22px;
+  }
+  .indicators-nav li span {
+    font-size: 12px;
+  }
+  .indicators-nav li + li {
+    margin-left: 10px;
+  }
+  .provider-scheme {
+    margin-top: -90px;
+    width: 100%;
+  }
+  .about-page .img-notice {
+    margin-top: 20px;
+  }
+  .img-notice {
+    flex-direction: column;
+  }
+  .img-notice .notice-left {
+    padding-right: 0;
+    border-right: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .img-notice .notice-right {
+    padding-left: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .notice-caption .main-title {
+    font-size: 24px;
+  }
+  .notice-caption .notice-caption-item {
+    margin-top: 10px;
+  }
+  .img-notice .insight-item {
+    margin-top: 10px;
+    padding: 15px;
+  }
+  .img-notice .insight-item-top h6 {
+    font-size: 14px;
+    line-height: 110%;
+  }
+  .img-notice .insight-item-content p {
+    font-size: 13px;
+  }
+  .about-page .subscribe-lg {
+    margin-top: 20px;
+  }
+  .about-page {
+    padding-bottom: 30px;
+  }
+  .img-notice.img-left {
+    .notice-left {
+      order: 2;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .notice-right {
+      order: 1;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  .service-page .img-notice + .img-notice {
+    margin-top: 30px;
+  }
+  .partners h6 {
+    font-size: 22px;
+  }
+  .service-page .subscribe-lg {
+    margin-top: 30px;
+  }
+  .service-page {
+    padding-bottom: 30px;
+  }
+  .lumina-add {
+    flex-direction: column;
+  }
+  .lumina-add .add-right {
+    order: 1;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .lumina-add .add-right::before {
+    content: none;
+  }
+  .lumina-add .add-left {
+    width: 100%;
+    order: 2;
+    margin-top: 15px;
+  }
+  .lumina-add .main-text {
+    margin-top: 5px;
+  }
+  .lumina-add .btn-wrapper {
+    margin-top: 15px;
+    display: block;
+  }
+  .lumina-add .btn-wrapper button {
+    width: 100%;
+  }
+  .lumina-add .btn-wrapper button + button {
+    margin-top: 10px;
+  }
+  .partners-page .partners {
+    margin-top: 30px;
+  }
+  .partners-page .quality-card {
+    margin-top: 40px;
+  }
+  .partners-page .img-notice {
+    margin-top: 40px;
+  }
+  .partners-page .subscribe-lg {
+    margin-top: 40px;
+  }
+  .partners-page {
+    padding-bottom: 30px;
+  }
 }
