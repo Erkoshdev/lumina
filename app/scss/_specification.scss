@@ -121,7 +121,7 @@ body {
 
 .breadcrumb li + li:before {
   content: '';
-  background: url("../img/icon/chevron-right-gray.svg");
+  background: url("../img/icon/chevron-right-gray.svg") no-repeat center;
   width: 19px;
   height: 19px;
   position: absolute;

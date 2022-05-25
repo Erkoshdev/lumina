@@ -26,7 +26,18 @@
     width: 250px;
     height: 250px;
   }
-
+  .projects-tablink-wrapper {
+    padding: 20px 15px;
+  }
+  .projects-tab-content .project-card {
+    height: 210px;
+  }
+  .projects-tablink + .projects-tablink {
+    margin-top: 20px;
+  }
+  .projects-tablink {
+    font-size: 15px;
+  }
 }
 
 //desktops
@@ -136,6 +147,77 @@
     width: 200px;
     height: 200px;
     top: 46%;
+  }
+  .projects-tablink-wrapper {
+    padding: 20px;
+    width: 26%;
+  }
+  .projects-tablink {
+    font-size: 14px;
+  }
+  .projects-tablink + .projects-tablink {
+    margin-top: 15px;
+  }
+  .projects-tab-content {
+    width: calc(74% - 30px);
+    margin-left: 30px;
+  }
+  .project-card-wrapper {
+    margin: -7.5px;
+  }
+  .projects-tab-content .project-card {
+    margin: 7.5px;
+    width: calc(33.3% - 15px);
+    height: 170px;
+    padding: 20px;
+  }
+  .project-info-text p {
+    font-size: 30px;
+    line-height: 120%;
+  }
+  .project-info-text:first-child {
+    margin-right: 60px;
+    margin-bottom: 30px;
+  }
+  .project-info-text + .project-info-text {
+    margin-right: 60px;
+    margin-bottom: 30px;
+  }
+  .insight-text p {
+    font-size: 15px;
+  }
+  .subscribe-md {
+    padding: 40px 50px;
+  }
+  .contact-list {
+    margin: 30px -7.5px -7.5px -7.5px;
+  }
+  .contact-link {
+    padding: 15px;
+    margin: 7.5px;
+    width: calc(33.3% - 15px);
+  }
+  .contact-link-img {
+    width: 30px;
+    height: 30px;
+  }
+  .contact-link-img svg {
+    width: 18px;
+    height: 18px;
+  }
+  .contact-link-caption {
+    margin-left: 10px;
+  }
+  .contact-link-caption span {
+    font-size: 12px;
+    line-height: 120%;
+  }
+  .contact-link-caption p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .contacts-page {
+    padding-bottom: 60px;
   }
 }
 
@@ -508,6 +590,105 @@
   .partners-page {
     padding-bottom: 60px;
   }
+  .projects-tablink-wrapper {
+    padding: 20px;
+    width: 28%;
+  }
+  .projects-tablink {
+    font-size: 14px;
+  }
+  .projects-tablink + .projects-tablink {
+    margin-top: 15px;
+  }
+  .projects-tab-content {
+    width: calc(72% - 30px);
+    margin-left: 30px;
+  }
+  .project-card-wrapper {
+    margin: -10px;
+  }
+  .projects-tab-content .project-card {
+    margin: 10px;
+    width: calc(50% - 20px);
+    height: 220px;
+    padding: 20px;
+  }
+  .project-info-text p {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .project-info-text span {
+    font-size: 14px;
+  }
+  .project-info-text:first-child {
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  .project-info-text + .project-info-text {
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  .project-gallery {
+    margin-top: 10px;
+  }
+  .project-gallery img {
+    max-height: 170px;
+  }
+  .projects-page .projects-content {
+    padding-bottom: 60px;
+  }
+  .insights-item {
+    padding: 15px 20px;
+  }
+  .insight-text p {
+    font-size: 14px;
+  }
+  .insight-date span {
+    font-size: 12px;
+  }
+  .insight-text {
+    margin-top: 5px;
+  }
+  .insight-content {
+    padding-bottom: 60px;
+  }
+  .subscribe-md {
+    padding: 40px 50px;
+  }
+  .subscribe-md h2 {
+    font-size: 30px;
+    line-height: 120%;
+  }
+  .contact-list {
+    margin: 30px -7.5px -7.5px -7.5px;
+  }
+  .contact-link {
+    padding: 15px;
+    margin: 7.5px;
+    width: calc(33.3% - 15px);
+  }
+  .contact-link-img {
+    width: 30px;
+    height: 30px;
+  }
+  .contact-link-img svg {
+    width: 18px;
+    height: 18px;
+  }
+  .contact-link-caption {
+    margin-left: 10px;
+  }
+  .contact-link-caption span {
+    font-size: 12px;
+    line-height: 120%;
+  }
+  .contact-link-caption p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .contacts-page {
+    padding-bottom: 60px;
+  }
 }
 
 //landscape phones
@@ -798,6 +979,9 @@
   .projects-body {
     padding: 25px 0;
   }
+  .projects-page .projects-content {
+    padding-bottom: 40px;
+  }
   .insight-left {
     padding: 20px;
   }
@@ -986,6 +1170,129 @@
   }
   .partners-page {
     padding-bottom: 40px;
+  }
+  .projects-content {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .projects-tablink-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    background: transparent;
+  }
+  .projects-tablink {
+    width: fit-content;
+    padding-right: 0;
+    font-size: 15px;
+  }
+  .projects-tablink + .projects-tablink {
+    margin-top: 0;
+    margin-left: 15px;
+  }
+  .projects-tablink.active::after {
+    content: none;
+  }
+  .projects-tab-content {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .project-card-wrapper {
+    margin: -7.5px;
+  }
+  .projects-tab-content .project-card {
+    margin: 7.5px;
+    width: calc(33.3% - 15px);
+    height: 180px;
+    padding: 20px;
+  }
+  .project-info-text p {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .project-info-text span {
+    font-size: 13px;
+  }
+  .project-info-text:first-child {
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  .project-info-text + .project-info-text {
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  .project-gallery {
+    margin: 10px -5px -5px -5px;
+  }
+  .project-gallery img {
+    max-height: 150px;
+    margin: 5px;
+  }
+  .project-detail-page .projects-content {
+    padding-bottom: 40px;
+  }
+  .insights-item {
+    width: calc(50% - 15px);
+    padding: 15px 20px;
+    margin: 7.5px;
+  }
+  .insight-date span {
+    font-size: 12px;
+  }
+  .insight-text {
+    margin-top: 5px;
+  }
+  .insight-text p {
+    font-size: 15px;
+  }
+  .insights-list {
+    margin: 10px -7.5px -7.5px -7.5px;
+  }
+  .insight-content {
+    padding-bottom: 50px;
+  }
+  .subscribe-md {
+    padding: 20px 50px;
+  }
+  .subscribe-md h2 {
+    font-size: 30px;
+    line-height: 120%;
+  }
+  .contact-list {
+    margin: 30px -7.5px -7.5px -7.5px;
+  }
+  .contact-link {
+    padding: 15px;
+    margin: 7.5px;
+    width: calc(33.3% - 15px);
+    display: block;
+    text-align: center;
+  }
+  .contact-link-img {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  .contact-link-img svg {
+    width: 18px;
+    height: 18px;
+  }
+  .contact-link-caption {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .contact-link-caption span {
+    font-size: 12px;
+    line-height: 120%;
+  }
+  .contact-link-caption p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .contacts-page {
+    padding-bottom: 60px;
   }
 }
 
@@ -1377,6 +1684,9 @@
   .projects-body {
     padding: 25px 0;
   }
+  .project-detail-page .projects-content {
+    padding-bottom: 20px;
+  }
   .insight {
     display: block;
   }
@@ -1478,6 +1788,20 @@
   .breadcrumb {
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+  .breadcrumb li + li {
+    padding-left: 30px;
+  }
+  .breadcrumb li + li::before {
+    left: 5px;
+    width: 16px;
+    height: 16px;
+  }
+  .breadcrumb a {
+    font-size: 14px;
+  }
+  .breadcrumb li {
+    font-size: 14px;
   }
   .complex-notice {
     flex-direction: column;
@@ -1676,5 +2000,176 @@
   }
   .partners-page {
     padding-bottom: 30px;
+  }
+  .projects-content {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .projects-tablink-wrapper {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    display: block;
+    box-shadow: none;
+  }
+  .projects-tablink {
+    width: fit-content;
+    padding-right: 0;
+    font-size: 16px;
+    display: block;
+  }
+  .projects-tablink.active {
+    padding-left: 20px;
+  }
+  .projects-tablink.active:before {
+    content: '';
+    background: url("../img/icon/chevron-right.svg");
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  .projects-tablink + .projects-tablink {
+    margin-top: 10px;
+  }
+  .projects-tablink.active::after {
+    content: none;
+  }
+  .projects-tab-content {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .project-card-wrapper {
+    margin: -7.5px;
+  }
+  .projects-tab-content .project-card {
+    margin: 7.5px;
+    width: calc(50% - 15px);
+    height: 180px;
+    padding: 20px;
+  }
+
+
+
+  .project-info-text p {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .project-info-text span {
+    font-size: 12px;
+  }
+  .project-info-text:first-child {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  .project-info-text + .project-info-text {
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  .project-gallery {
+    margin: 10px -5px -5px -5px;
+  }
+  .project-gallery img {
+    max-height: 145px;
+    margin: 5px;
+  }
+  .projects-page .projects-content {
+    padding-bottom: 40px;
+  }
+  .insights-item {
+    width: calc(100% - 10px);
+    padding: 15px 20px;
+    margin: 5px;
+  }
+  .insight-date span {
+    font-size: 12px;
+  }
+  .insight-text {
+    margin-top: 5px;
+  }
+  .insight-text p {
+    font-size: 14px;
+  }
+  .insights-list {
+    margin: 10px -5px -5px -5px;
+    padding-bottom: 30px;
+  }
+  .insight-content .main-title {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .insight-content-date {
+    margin-top: 5px;
+  }
+  .insight-content-text {
+    margin-top: 10px;
+  }
+  .insight-content-text p {
+    font-size: 14px;
+  }
+  .insight-content-text p + p {
+    margin-top: 14px;
+  }
+  .insight-content {
+    padding-bottom: 30px;
+    padding-top: 15px;
+  }
+
+
+
+  .subscribe-md {
+    padding: 20px 30px;
+  }
+  .subscribe-md h2 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .subscribe-md-form {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .contact-list {
+    margin: 20px -7.5px -7.5px -7.5px;
+    display: block;
+  }
+  .contact-link {
+    padding: 15px;
+    margin: 7.5px;
+    width: calc(100% - 15px);
+  }
+  .contact-link-img {
+    width: 40px;
+    height: 40px;
+  }
+  .contact-link-img svg {
+    width: 18px;
+    height: 18px;
+  }
+  .contact-link-caption {
+    margin-left: 15px;
+  }
+  .contact-link-caption span {
+    font-size: 12px;
+    line-height: 120%;
+  }
+  .contact-link-caption p {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  .contacts-page {
+    padding-bottom: 30px;
+  }
+  .subscribe-md-form .form-half {
+    display: block;
+  }
+  .subscribe-md-form .form-half input + input {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+  .subscribe-md-form .form-half input {
+    width: 100%;
   }
 }
