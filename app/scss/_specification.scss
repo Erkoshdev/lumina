@@ -37,7 +37,7 @@ body {
 }
 
 .container-cut {
-  padding: 0 120px;
+  padding: 0 70px;
 }
 
 .input-text {
@@ -46,6 +46,7 @@ body {
   border: none;
   width: 100%;
   height: fit-content;
+  min-width: 170px;
 }
 
 .input-text::placeholder {

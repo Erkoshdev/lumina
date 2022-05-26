@@ -473,7 +473,7 @@ header.header-light {
 }
 
 .subscribe-sm .container-cut {
-  padding: 30px 160px;
+  padding: 30px 120px;
 }
 
 .subscribe-sm-content {
@@ -862,6 +862,7 @@ header.header-light {
   border-radius: 16px;
   padding: 100px 150px;
   position: relative;
+  background: url("../img/main/subscribe-lg-bg.png") no-repeat center/cover;
 }
 
 .main-page .subscribe-lg {
@@ -1010,6 +1011,7 @@ footer {
   display: flex;
   align-items: center;
   margin-top: 27px;
+  width: fit-content;
 }
 
 .footer-phone-numbers {
@@ -1751,14 +1753,13 @@ footer {
 .subscribe-md {
   border-radius: 16px;
   overflow: hidden;
-  padding: 40px 300px;
+  padding: 40px 210px;
   text-align: center;
-  background: #EAEEF6 url("../img/main/vector.png");
+  background: #EAEEF6 url("../img/main/subscribe-md-bg.png");
 }
 
 .subscribe-md-content {
   margin: 0 auto;
-  background: #EAEEF6;
   box-shadow: 0 5px 80px #EAEEF6;
 }
 
@@ -1850,6 +1851,7 @@ footer {
 .map {
   margin-top: 50px;
   width: 100%;
+  height: 340px;
 }
 
 

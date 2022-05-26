@@ -38,6 +38,9 @@
   .projects-tablink {
     font-size: 15px;
   }
+  .project-gallery img {
+    max-height: 225px;
+  }
 }
 
 //desktops
@@ -218,6 +221,9 @@
   }
   .contacts-page {
     padding-bottom: 60px;
+  }
+  .map {
+    height: 290px;
   }
 }
 
@@ -688,6 +694,9 @@
   }
   .contacts-page {
     padding-bottom: 60px;
+  }
+  .map {
+    height: 280px;
   }
 }
 
@@ -1293,6 +1302,9 @@
   }
   .contacts-page {
     padding-bottom: 60px;
+  }
+  .map {
+    height: 250px;
   }
 }
 
@@ -2117,9 +2129,6 @@
     padding-bottom: 30px;
     padding-top: 15px;
   }
-
-
-
   .subscribe-md {
     padding: 20px 30px;
   }
@@ -2171,5 +2180,8 @@
   }
   .subscribe-md-form .form-half input {
     width: 100%;
+  }
+  .map {
+    height: 200px;
   }
 }
