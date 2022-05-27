@@ -603,14 +603,30 @@ header.header-light {
   justify-content: space-around;
 }
 
-.brand-card ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.brand-slider {
   width: 100%;
 }
 
-.brand-card ul img {
+.brand-slider {
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .slick-slide div:not(.brand-slider-item) {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 0;
+  }
+  .slick-slide + .slick-slide {
+    margin-left: 20px;
+  }
+}
+
+.brand-slider-item {
+  width: fit-content;
+}
+
+.brand-slider img {
   max-height: 65px;
 }
 
@@ -640,13 +656,14 @@ header.header-light {
   display: flex;
   align-items: center;
   margin-left: 16px;
+  border-bottom: none;
 }
 
 .projects-tab li + li {
   margin-left: 12px;
 }
 
-.projects-tab button {
+.projects-tab .main-project-tab {
   border: 1px solid #80AEFF;
   border-radius: 20px;
   padding: 11px 16px;
@@ -658,9 +675,10 @@ header.header-light {
   background: transparent;
 }
 
-.projects-tab button.active {
+.projects-tab .main-project-tab.active {
   background: #FF671D;
   border-color: #FF671D;
+  color: #FFFFFF;
 }
 
 .projects-link {
@@ -942,6 +960,7 @@ header.header-light {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.04);
   border-radius: 16px;
   overflow: hidden;
+  position: relative;
 }
 
 .news-card-img {

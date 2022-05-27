@@ -424,11 +424,8 @@
   .vision-brands-caption {
     padding: 15px 20px 25px 20px;
   }
-  .brand-card ul img {
+  .brand-slider-item img {
     max-height: 35px;
-  }
-  .brand-card .vision-brands-img li + li {
-    margin-left: 15px;
   }
   .projects-top {
     padding: 20px;
@@ -938,11 +935,8 @@
   .vision-brands-caption {
     padding: 10px;
   }
-  .brand-card ul img {
+  .brand-slider-item img {
     max-height: 20px;
-  }
-  .brand-card .vision-brands-img li + li {
-    margin-left: 15px;
   }
   .vision-brands-caption h6 {
     font-size: 20px;
@@ -965,6 +959,13 @@
   .projects-tab {
     margin-left: 0;
     margin-top: 10px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 10px;
+    scrollbar-width: none;
+  }
+  .projects-tab::-webkit-scrollbar {
+    display: none;
   }
   .projects-tab button {
     padding: 7px 15px;
@@ -1639,7 +1640,7 @@
   .vision-brands-caption {
     padding: 20px;
   }
-  .brand-card ul img {
+  .brand-slider-item img {
     max-height: 20px;
   }
   .brand-card .vision-brands-img li + li {
@@ -1661,7 +1662,7 @@
   }
   .projects-top {
     padding: 20px;
-    flex-wrap: wrap;
+    display: block;
   }
   .projects-top h6 {
     font-size: 22px;
@@ -1669,14 +1670,17 @@
   .projects-tab {
     margin-left: 0;
     margin-top: 10px;
+    flex-wrap: nowrap;
     overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 5px;
   }
   .projects-tab::-webkit-scrollbar {
     display: none;
   }
-  .projects-tab button {
-    padding: 7px 15px;
-    font-size: 12px;
+  .projects-tab .main-project-tab {
+    padding: 10px 15px;
+    font-size: 15px;
     line-height: 110%;
   }
   .projects-tab li + li {
@@ -1685,7 +1689,8 @@
   .projects-link {
     margin-left: 0;
     margin-top: 10px;
-    padding: 8px 15px;
+    padding: 10px 15px;
+    width: fit-content;
   }
   .projects-link span {
     font-size: 13px;

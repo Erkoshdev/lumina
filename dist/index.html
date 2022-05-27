@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lumina</title>
   <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
   <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/slick-carousel.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="header-light">
+
+<header class="header-light animate__animated  animate__fadeInDown">
   <div class="header-top">
     <div class="container">
       <ul class="header-top-contacts">
@@ -103,7 +107,7 @@
       <div class="swiper-slide main-slider-item slide-1">
         <div class="slider-title">
           <div class="container">
-            <h2>Lighting Solutions</h2>
+            <h2 class="animate__animated animate__fadeInUp">Lighting Solutions</h2>
           </div>
         </div>
         <div class="slider-detail">
@@ -228,34 +232,32 @@
         </div>
         <div class="vision-brands-card brand-card">
           <div class="vision-brands-img">
-            <ul>
-              <li>
+            <div class="brand-slider">
+              <div class="brand-slider-item">
                 <img src="img/content/rn.png" alt="">
-              </li>
-              <li>
+              </div>
+              <div class="brand-slider-item">
                 <img src="img/content/arcluce.png" alt="">
-              </li>
-              <li>
+              </div>
+              <div class="brand-slider-item">
                 <img src="img/content/ufo.png" alt="">
-              </li>
-              <li>
+              </div>
+              <div class="brand-slider-item">
                 <img src="img/content/zumt.png" alt="">
-              </li>
-            </ul>
-            <ul>
-              <li>
+              </div>
+              <div class="brand-slider-item">
                 <img src="img/content/sylvania.png" alt="">
-              </li>
-              <li>
+              </div>
+              <div class="brand-slider-item">
                 <img src="img/content/griven.png" alt="">
-              </li>
-              <li>
+              </div>
+              <div class="brand-slider-item">
                 <img src="img/content/ufo.png" alt="">
-              </li>
-              <li>
+              </div>
+              <div class="brand-slider-item">
                 <img src="img/content/u.png" alt="">
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
           <div class="vision-brands-caption">
             <h6>Brands</h6>
@@ -265,21 +267,21 @@
           </div>
         </div>
       </div>
-      <div class="projects swiper">
+      <div class="projects">
         <div class="projects-top">
           <h6>Projects:</h6>
-          <ul class="projects-tab">
+          <ul class="projects-tab nav nav-tabs">
             <li>
-              <button class="active to-lighting">Lighting design</button>
+              <button class="nav-link main-project-tab active" data-bs-toggle="tab" data-bs-target="#lighting_design_swiper">Lighting design</button>
             </li>
             <li>
-              <button class="to-lux">Lux Calculation</button>
+              <button class="nav-link main-project-tab" data-bs-toggle="tab" data-bs-target="#lux_calculation_swiper">Lux Calculation</button>
             </li>
             <li>
-              <button class="to-boq">BOQ</button>
+              <button class="nav-link main-project-tab" data-bs-toggle="tab" data-bs-target="#boq_swiper">BOQ</button>
             </li>
             <li>
-              <button class="to-support">Installation support</button>
+              <button class="nav-link main-project-tab" data-bs-toggle="tab" data-bs-target="#installation_support_swiper">Installation support</button>
             </li>
           </ul>
           <a class="projects-link" href="">
@@ -292,18 +294,70 @@
           </a>
         </div>
         <div class="projects-body">
-          <div class="swiper-wrapper">
-            <div class="projects-item swiper-slide">
-              <img src="img/content/project1.png" alt="">
-              <p>Industrial Stock Sales</p>
+          <div class="tab-content">
+            <div class="tab-pane fade show active swiper lighting-design-swiper" id="lighting_design_swiper">
+              <div class="swiper-wrapper">
+                <div class="projects-item swiper-slide">
+                  <img src="img/content/project1.png" alt="">
+                  <p>Industrial Stock Sales</p>
+                </div>
+                <div class="projects-item swiper-slide">
+                  <img src="img/content/project2.png" alt="">
+                  <p>Industrial Stock Sales</p>
+                </div>
+                <div class="projects-item swiper-slide">
+                  <img src="img/content/project3.png" alt="">
+                  <p>Industrial Stock Sales</p>
+                </div>
+              </div>
             </div>
-            <div class="projects-item swiper-slide">
-              <img src="img/content/project2.png" alt="">
-              <p>Industrial Stock Sales</p>
+            <div class="tab-pane fade swiper lux-calculation-swiper" id="lux_calculation_swiper">
+              <div class="swiper-wrapper">
+                <div class="projects-item swiper-slide">
+                  <img src="img/content/project1.png" alt="">
+                  <p>Industrial Stock Sales</p>
+                </div>
+                <div class="projects-item swiper-slide">
+                  <img src="img/content/project2.png" alt="">
+                  <p>Industrial Stock Sales</p>
+                </div>
+                <div class="projects-item swiper-slide">
+                  <img src="img/content/project3.png" alt="">
+                  <p>Industrial Stock Sales</p>
+                </div>
+              </div>
             </div>
-            <div class="projects-item swiper-slide">
-              <img src="img/content/project3.png" alt="">
-              <p>Industrial Stock Sales</p>
+            <div class="tab-pane fade swiper boq-swiper" id="boq_swiper">
+              <div class="swiper-wrapper">
+                <div class="projects-item swiper-slide">
+                  <img src="img/content/project1.png" alt="">
+                  <p>Industrial Stock Sales</p>
+                </div>
+                <div class="projects-item swiper-slide">
+                  <img src="img/content/project2.png" alt="">
+                  <p>Industrial Stock Sales</p>
+                </div>
+                <div class="projects-item swiper-slide">
+                  <img src="img/content/project3.png" alt="">
+                  <p>Industrial Stock Sales</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade swiper installation-support-swiper" id="installation_support_swiper">
+              <div class="swiper-wrapper">
+                <div class="projects-item swiper-slide">
+                  <img src="img/content/project1.png" alt="">
+                  <p>Industrial Stock Sales</p>
+                </div>
+                <div class="projects-item swiper-slide">
+                  <img src="img/content/project2.png" alt="">
+                  <p>Industrial Stock Sales</p>
+                </div>
+                <div class="projects-item swiper-slide">
+                  <img src="img/content/project3.png" alt="">
+                  <p>Industrial Stock Sales</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -421,6 +475,7 @@
               <h6>Industrial Stock Sales</h6>
               <p>clients around the world</p>
             </div>
+            <a class="absolute-link" href=""></a>
           </div>
           <div class="news-card">
             <div class="news-card-img">
@@ -430,6 +485,7 @@
               <h6>Industrial Stock Sales</h6>
               <p>clients around the world</p>
             </div>
+            <a class="absolute-link" href=""></a>
           </div>
           <div class="news-card">
             <div class="news-card-img">
@@ -439,6 +495,7 @@
               <h6>Industrial Stock Sales</h6>
               <p>clients around the world</p>
             </div>
+            <a class="absolute-link" href=""></a>
           </div>
           <div class="news-card">
             <div class="news-card-img">
@@ -448,6 +505,7 @@
               <h6>Industrial Stock Sales</h6>
               <p>clients around the world</p>
             </div>
+            <a class="absolute-link" href=""></a>
           </div>
         </div>
       </div>
@@ -575,8 +633,23 @@
 
 <script src="js/libs.min.js"></script>
 <script src="js/swiper.bundle.min.js"></script>
+<script src="js/slick-carousel.js"></script>
 <script src="js/main.js"></script>
 <script>
+
+  //brand slider
+  $('.brand-slider').slick({
+    infinite: true,
+    // autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    rows: 2,
+    speed: 600,
+    variableWidth: true,
+  });
+
   //main-slider
   const swiper = new Swiper('.main-slider', {
     direction: 'horizontal',
@@ -589,7 +662,88 @@
   });
 
   //project slider
-  const projects = new Swiper('.projects-body', {
+  const lighting_design_swiper = new Swiper('.lighting-design-swiper', {
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+    speed: 600,
+    spaceBetween: 35,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      // when window width is >= 576px
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 3,
+      },
+      // when window width is >= 992px
+      992: {
+        slidesPerView: 4,
+      }
+    }
+  });
+  const lux_calculation_swiper = new Swiper('.lux-calculation-swiper', {
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+    speed: 600,
+    spaceBetween: 35,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      // when window width is >= 576px
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 3,
+      },
+      // when window width is >= 992px
+      992: {
+        slidesPerView: 4,
+      }
+    }
+  });
+  const boq_swiper= new Swiper('.boq-swiper', {
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+    speed: 600,
+    spaceBetween: 35,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      // when window width is >= 576px
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 3,
+      },
+      // when window width is >= 992px
+      992: {
+        slidesPerView: 4,
+      }
+    }
+  });
+  const installation_support_swiper = new Swiper('.installation-support-swiper', {
     direction: 'horizontal',
     loop: true,
     centeredSlides: true,
