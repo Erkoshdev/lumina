@@ -6,11 +6,10 @@
   <title>Lumina</title>
   <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
   <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header>
+<header class="animate__animated  animate__fadeInDown">
   <div class="header-top">
     <div class="container">
       <ul class="header-top-contacts">
@@ -49,16 +48,13 @@
             </button>
             <ul class="header-nav">
               <li>
-                <a href="index.html">Main</a>
+                <a href="index.html">home</a>
               </li>
               <li>
-                <a class="active" href="about.html">About</a>
+                <a class="active" href="about.html">About us</a>
               </li>
               <li>
                 <a href="services.html">Services</a>
-              </li>
-              <li>
-                <a href="partners.html">Partners</a>
               </li>
               <li>
                 <a href="projects.html">Projects</a>
@@ -141,31 +137,6 @@
       </div>
     </div>
   </div>
-  <div class="partners swiper">
-    <div class="partners-list swiper-wrapper">
-      <div class="partners-list-item swiper-slide">
-        <img src="img/content/arcluce-black.png" alt="">
-      </div>
-      <div class="partners-list-item swiper-slide">
-        <img src="img/content/ufo-black.png" alt="">
-      </div>
-      <div class="partners-list-item swiper-slide">
-        <img src="img/content/zumtobel-black.png" alt="">
-      </div>
-      <div class="partners-list-item swiper-slide">
-        <img src="img/content/sylvania-black.png" alt="">
-      </div>
-      <div class="partners-list-item swiper-slide">
-        <img src="img/content/blui-black.png" alt="">
-      </div>
-      <div class="partners-list-item swiper-slide">
-        <img src="img/content/griven-black.png" alt="">
-      </div>
-      <div class="partners-list-item swiper-slide">
-        <img src="img/content/u-black.png" alt="">
-      </div>
-    </div>
-  </div>
   <div class="container tide">
     <div class="notice-card">
       <div class="notice-card-img">
@@ -175,8 +146,8 @@
         <p>OP3 is an extraordinary one-stop Event Management, Interior Design and Exhibition Design agency.</p>
       </div>
     </div>
-    <div class="info-card">
-      <div class="info-card-caption">
+    <div class="text-notice">
+      <div class="text-notice-caption">
         <h6>Lumina lighting offers a fresh approach with beautifully designed, innovative, energy saving and
           economical lighting solutions. Instead of being the traditional box movers, we assist our Clients in enhancing
           their designs through the right light.</h6>
@@ -186,19 +157,27 @@
         <p class="main-text">We will go above and beyond to support our clients as a business partners and act as a
           procurement source for desired products at competitive pricing without any compromise in the quality</p>
       </div>
-      <div class="info-card-img">
-        <img src="img/content/review-man.png" alt="">
+      <div class="text-notice-img">
+        <img src="img/content/bedroom.png" alt="">
       </div>
-      <div class="info-card-line">
-        <img src="img/content/review-line1.png" alt="">
-        <img src="img/content/review-line2.png" alt="">
-        <img src="img/content/review-line3.png" alt="">
-        <img src="img/content/review-line5.png" alt="">
-        <img src="img/content/review-line6.png" alt="">
-        <img src="img/content/review-line8.png" alt="">
-        <img src="img/content/review-line9.png" alt="">
-        <img src="img/content/review-line10.png" alt="">
-        <img src="img/content/review-line11.png" alt="">
+    </div>
+    <div class="lumina-add">
+      <div class="add-left">
+        <img src="img/content/hand.png" alt="">
+      </div>
+      <div class="add-right">
+        <h2 class="main-title">Boost your business with Lumina</h2>
+        <p class="main-text">Attract, convert, and retain customers with flexible payment options and performance-driven marketing.</p>
+        <div class="btn-wrapper">
+          <button class="btn-custom">Start work with us!</button>
+          <button class="btn-plain callback-btn">
+            <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4824 12.3003C13.4637 12.2996 13.4403 12.2995 13.3559 12.2995L13.3253 12.2996C13.32 12.2997 13.3118 12.2999 13.2941 12.3007C13.0081 12.3133 12.6959 12.4659 12.4516 12.7352C12.2073 13.0045 12.0858 13.33 12.101 13.6159L12.1018 13.633C12.1019 13.6343 12.1019 13.6357 12.102 13.6374C12.2689 15.2963 12.6381 16.7969 13.1898 18.1304L14.0087 17.4458C14.406 17.1137 14.6671 16.8945 14.856 16.7065C15.0354 16.528 15.1097 16.4154 15.1527 16.3163C15.184 16.244 15.2085 16.1688 15.2257 16.0919C15.2493 15.9865 15.2555 15.8517 15.2156 15.6019C15.1737 15.3387 15.0916 15.0078 14.966 14.5053L14.6713 13.3265C14.6508 13.2446 14.645 13.222 14.6399 13.204C14.4903 12.684 14.0231 12.3192 13.4824 12.3003ZM13.8647 19.5213L14.9708 18.5967L14.9944 18.5769C15.3618 18.2698 15.6736 18.0091 15.9142 17.7696C16.1695 17.5155 16.3832 17.2488 16.5288 16.9133C16.5978 16.7541 16.6516 16.5888 16.6895 16.4195C16.7694 16.0625 16.7537 15.7212 16.6969 15.3655C16.6434 15.0303 16.5448 14.6359 16.4287 14.1714L16.4212 14.1415L16.1265 12.9627L16.1236 12.951C16.1074 12.8863 16.0948 12.836 16.0814 12.7894C15.7524 11.6454 14.7247 10.8429 13.535 10.8012C13.4865 10.7995 13.4347 10.7995 13.368 10.7995L13.3559 10.7995C13.3162 10.7995 13.2872 10.7996 13.2279 10.8022C12.4747 10.8354 11.8048 11.2157 11.3406 11.7273C10.8935 12.2202 10.5864 12.8911 10.6001 13.6126C10.5997 13.6192 10.5993 13.6245 10.5992 13.6282C10.5991 13.6386 10.5991 13.6555 10.5992 13.6621L10.5998 13.6779L10.6006 13.6931L10.6014 13.7047L10.6021 13.7122L10.6023 13.7151L10.6028 13.7202L10.6033 13.7252C10.8192 15.9382 11.3724 17.9332 12.2466 19.673C13.5459 22.2588 15.5408 24.2537 18.1266 25.553C19.8665 26.4272 21.8614 26.9804 24.0744 27.1963L24.0794 27.1968L24.0845 27.1973L24.0875 27.1975L24.0949 27.1982L24.1065 27.199L24.1217 27.1998L24.1375 27.2004C24.1409 27.2004 24.1469 27.2005 24.1533 27.2005C24.1596 27.2005 24.1663 27.2005 24.1714 27.2004C24.1751 27.2003 24.1805 27.2 24.187 27.1995C24.9085 27.2133 25.5794 26.9061 26.0723 26.459C26.584 25.9948 26.9642 25.3249 26.9974 24.5717C27.0001 24.5124 27.0001 24.4834 27.0001 24.4437V24.4316C27.0001 24.3649 27.0001 24.3131 26.9984 24.2646C26.9567 23.075 26.1542 22.0472 25.0102 21.7182C24.9636 21.7048 24.9134 21.6922 24.8487 21.6761L24.8369 21.6731L23.6581 21.3784L23.6282 21.3709C23.1637 21.2548 22.7693 21.1562 22.4341 21.1027C22.0784 21.0459 21.7371 21.0302 21.3801 21.1101C21.2108 21.148 21.0455 21.2018 20.8864 21.2709C20.5508 21.4164 20.2841 21.6301 20.03 21.8854C19.7906 22.126 19.5298 22.4378 19.2227 22.8052L19.203 22.8288L18.2783 23.9349C16.4053 22.8797 14.9199 21.3944 13.8647 19.5213ZM19.6692 24.6098C21.0027 25.1615 22.5034 25.5307 24.1622 25.6976C24.1639 25.6977 24.1654 25.6978 24.1666 25.6978L24.1837 25.6986C24.4696 25.7138 24.7951 25.5923 25.0644 25.348C25.3337 25.1037 25.4863 24.7915 25.4989 24.5055C25.4997 24.4878 25.4999 24.4796 25.5 24.4743L25.5001 24.4437C25.5001 24.3593 25.5 24.3359 25.4993 24.3172C25.4804 23.7765 25.1156 23.3093 24.5956 23.1598C24.5776 23.1546 24.555 23.1488 24.4731 23.1283L23.2943 22.8336C22.7918 22.708 22.4609 22.626 22.1977 22.584C21.9479 22.5441 21.8131 22.5503 21.7077 22.5739C21.6308 22.5911 21.5556 22.6156 21.4833 22.647C21.3843 22.6899 21.2716 22.7643 21.0931 22.9436C20.9051 23.1325 20.6859 23.3936 20.3538 23.791L19.6692 24.6098ZM24.3268 27.171C24.3323 27.1695 24.3382 27.1678 24.3443 27.166C24.3593 27.1615 24.3779 27.1555 24.3988 27.1475C24.4194 27.1396 24.4457 27.1285 24.4752 27.1132C24.4872 27.1069 24.512 27.0928 24.5249 27.085C24.5391 27.076 24.5687 27.0557 24.5839 27.0445C24.6006 27.0314 24.635 27.0019 24.6524 26.9856C24.6714 26.9665 24.7093 26.9239 24.7279 26.9003C24.7475 26.8731 24.7847 26.8135 24.8018 26.7811C24.8186 26.7449 24.847 26.668 24.8583 26.6273C24.8675 26.5845 24.8785 26.4974 24.8802 26.4534C24.8793 26.41 24.8703 26.3259 24.8625 26.2853C24.8393 26.1804 24.7974 26.0974 24.7583 26.0374C24.7469 26.0205 24.7262 25.9927 24.7108 25.9731C24.87 26.5071 24.5038 27.06 24.3268 27.171ZM24.5778 25.8455C24.5723 25.8414 24.5669 25.8376 24.562 25.834C24.5384 25.8175 24.5172 25.8045 24.5002 25.7949C24.483 25.7852 24.4676 25.7773 24.4548 25.7712C24.442 25.765 24.4304 25.76 24.4206 25.7558C24.4197 25.7554 24.4188 25.7551 24.4178 25.7547C24.4606 25.7757 24.519 25.8077 24.5778 25.8455ZM10.6286 13.4728C10.7396 13.2959 11.2924 12.9297 11.8263 13.0887C11.8067 13.0733 11.7789 13.0526 11.762 13.0412C11.702 13.0021 11.6189 12.9602 11.514 12.9371C11.4734 12.9293 11.3892 12.9203 11.3459 12.9195C11.3019 12.9211 11.2147 12.9322 11.1719 12.9414C11.1313 12.9527 11.0544 12.9811 11.0183 12.9979C10.9858 13.0151 10.9263 13.0522 10.8991 13.0719C10.8756 13.0905 10.833 13.1283 10.8139 13.1473C10.7975 13.1648 10.7682 13.1991 10.755 13.2159C10.7438 13.2311 10.7236 13.2606 10.7145 13.2749C10.7068 13.2877 10.6927 13.3125 10.6864 13.3245C10.6711 13.354 10.66 13.3803 10.6521 13.4009C10.6441 13.4218 10.6381 13.4403 10.6336 13.4554C10.6318 13.4615 10.6301 13.4673 10.6286 13.4728ZM11.954 13.2216C11.9919 13.2805 12.0239 13.3389 12.0449 13.3818C12.0446 13.3808 12.0442 13.3799 12.0438 13.3789C12.0396 13.3691 12.0345 13.3576 12.0284 13.3447C12.0223 13.332 12.0144 13.3166 12.0047 13.2994C11.995 13.2824 11.9821 13.2612 11.9655 13.2376C11.962 13.2326 11.9581 13.2272 11.954 13.2216Z" fill="#333333"/>
+              <path d="M18.7996 36.2005C9.30005 36.2005 1.59912 28.4996 1.59912 19H-0.400879C-0.400879 29.6041 8.19548 38.2005 18.7996 38.2005V36.2005ZM36.0001 19C36.0001 28.4996 28.2992 36.2005 18.7996 36.2005V38.2005C29.4038 38.2005 38.0001 29.6041 38.0001 19H36.0001ZM18.7996 1.7995C28.2992 1.7995 36.0001 9.50042 36.0001 19H38.0001C38.0001 8.39585 29.4038 -0.2005 18.7996 -0.2005V1.7995ZM18.7996 -0.2005C8.19548 -0.2005 -0.400879 8.39585 -0.400879 19H1.59912C1.59912 9.50042 9.30005 1.7995 18.7996 1.7995V-0.2005Z" fill="white"/>
+            </svg>
+            <span>Call back</span>
+          </button>
+        </div>
       </div>
     </div>
     <div class="provider">
@@ -219,6 +198,23 @@
       </ul>
       <div class="provider-scheme">
         <img src="img/main/provider-scheme.png" alt="">
+      </div>
+    </div>
+    <div class="quality-card">
+      <div class="quality-card-item">
+        <img src="img/main/design.svg" alt="">
+        <h6>Design</h6>
+        <p>clients around the world</p>
+      </div>
+      <div class="quality-card-item">
+        <img src="img/main/supply.svg" alt="">
+        <h6>Supply</h6>
+        <p>clients around the world</p>
+      </div>
+      <div class="quality-card-item">
+        <img src="img/main/support.svg" alt="">
+        <h6>Technical support</h6>
+        <p>clients around the world</p>
       </div>
     </div>
     <div class="img-notice">
@@ -263,6 +259,7 @@
           <input class="input-text" type="text" placeholder="Name">
           <input class="input-text" type="text" placeholder="Surname">
         </div>
+        <input class="input-text" type="text" placeholder="Company name">
         <input class="input-text" type="email" placeholder="E-mail">
         <button class="btn-custom">Start work with us!</button>
       </form>
@@ -280,16 +277,13 @@
       <div class="footer-main">
         <ul class="footer-nav">
           <li>
-            <a class="active" href="index.html">Main</a>
+            <a class="active" href="index.html">home</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="about.html">About us</a>
           </li>
           <li>
             <a href="services.html">Services</a>
-          </li>
-          <li>
-            <a href="partners.html">Partners</a>
           </li>
           <li>
             <a href="projects.html">Projects</a>
@@ -388,34 +382,10 @@
   </div>
 </footer>
 
-
 <script src="js/libs.min.js"></script>
-<script src="js/swiper.bundle.min.js"></script>
 <script src="js/main.js"></script>
 <script>
-  //partners slider
-  const partnersSlider = new Swiper('.partners', {
-    direction: 'horizontal',
-    loop: true,
-    speed: 700,
-    slidesPerView: 'auto',
-    loopedSlides: 3,
-    centeredSlides: true,
-    autoplay: {
-      delay: 2000
-    },
-    breakpoints: {
-      320: {
-        spaceBetween: 15,
-      },
-      576: {
-        spaceBetween: 30,
-      },
-      768: {
-        spaceBetween: 50,
-      }
-    }
-  });
+
 </script>
 </body>
 </html>

@@ -22,7 +22,7 @@
   .footer-social li + li {
     margin-left: 25px;
   }
-  .lumina-add .add-right:before {
+  .lumina-add .add-left:before {
     width: 250px;
     height: 250px;
   }
@@ -39,7 +39,7 @@
     font-size: 15px;
   }
   .project-gallery img {
-    max-height: 225px;
+    max-height: 250px;
   }
 }
 
@@ -117,9 +117,6 @@
   .slider-detail-info li span {
     font-size: 14px;
   }
-  .main-slider {
-    min-height: 620px;
-  }
   .quality {
     padding: 70px 0 50px 0;
   }
@@ -146,9 +143,9 @@
   .lumina-add .add-right {
     margin-left: 40px;
   }
-  .lumina-add .add-right:before {
-    width: 200px;
-    height: 200px;
+  .lumina-add .add-left:before {
+    width: 230px;
+    height: 230px;
     top: 46%;
   }
   .projects-tablink-wrapper {
@@ -168,10 +165,10 @@
   .project-card-wrapper {
     margin: -7.5px;
   }
-  .projects-tab-content .project-card {
+  .project-card {
     margin: 7.5px;
-    width: calc(33.3% - 15px);
-    height: 170px;
+    width: calc(25% - 15px);
+    height: 200px;
     padding: 20px;
   }
   .project-info-text p {
@@ -224,6 +221,32 @@
   }
   .map {
     height: 290px;
+  }
+  .projects-top {
+    flex-wrap: wrap;
+  }
+  .projects-link {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .projects-item {
+    height: 210px;
+  }
+  .project-gallery img {
+    max-height: 205px;
+  }
+  .slider-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .slider-bottom h6 {
+    max-width: fit-content;
+  }
+  .slider-subscribe {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
   }
 }
 
@@ -328,9 +351,11 @@
   }
   .main-slider-item {
     padding-top: 250px;
+    height: auto;
   }
   .slider-title h2 {
-    font-size: 60px;
+    font-size: 55px;
+    white-space: nowrap;
   }
   .slider-nav-btn {
     top: 225px;
@@ -351,10 +376,6 @@
   }
   .slider-detail-info li span {
     font-size: 14px;
-  }
-  .main-slider {
-    min-height: initial;
-    height: fit-content;
   }
   .quality {
     padding: 70px 0 50px 0;
@@ -573,7 +594,7 @@
   .lumina-add .add-right {
     margin-left: 40px;
   }
-  .lumina-add .add-right:before {
+  .lumina-add .add-left:before {
     width: 190px;
     height: 190px;
     top: 46%;
@@ -610,10 +631,10 @@
   .project-card-wrapper {
     margin: -10px;
   }
-  .projects-tab-content .project-card {
+  .project-card {
     margin: 10px;
-    width: calc(50% - 20px);
-    height: 220px;
+    width: calc(33.3% - 20px);
+    height: 230px;
     padding: 20px;
   }
   .project-info-text p {
@@ -695,6 +716,23 @@
   .map {
     height: 280px;
   }
+  .slider-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .slider-bottom h6 {
+    max-width: 400px;
+  }
+  .slider-subscribe {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  .text-notice {
+    align-items: flex-start;
+    margin-top: 40px;
+  }
 }
 
 //landscape phones
@@ -745,6 +783,21 @@
     padding: 15px 0;
   }
   header.header-light .header-nav a {
+    color: #333;
+  }
+  header.header-light .header-phone svg path {
+    fill: #333;
+  }
+  header.header-light .header-phone-numbers p {
+    color: #333;
+  }
+  header.header-light .header-phone-numbers span {
+    color: #333;
+  }
+  header.header-light .header-callback {
+    border: 1px solid rgba(51,51,51,.09);
+  }
+  header.header-light .header-callback span {
     color: #333;
   }
   .header-phone {
@@ -835,7 +888,8 @@
     padding-top: 250px;
   }
   .slider-title h2 {
-    font-size: 60px;
+    font-size: 45px;
+    white-space: nowrap;
   }
   .slider-nav-btn {
     top: 225px;
@@ -856,10 +910,6 @@
   }
   .slider-detail-info li span {
     font-size: 14px;
-  }
-  .main-slider {
-    min-height: initial;
-    height: fit-content;
   }
   .quality {
     padding: 70px 0 50px 0;
@@ -1163,7 +1213,7 @@
   .lumina-add .add-right {
     margin-left: 20px;
   }
-  .lumina-add .add-right::before {
+  .lumina-add .add-left::before {
     content: none;
   }
   .partners-page .partners {
@@ -1212,7 +1262,7 @@
   .project-card-wrapper {
     margin: -7.5px;
   }
-  .projects-tab-content .project-card {
+  .project-card {
     margin: 7.5px;
     width: calc(33.3% - 15px);
     height: 180px;
@@ -1306,6 +1356,43 @@
   }
   .map {
     height: 250px;
+  }
+
+  .slider-bottom {
+    flex-wrap: wrap;
+  }
+  .slider-bottom h6 {
+    max-width: calc(100% - 170px);
+    margin-left: 15px;
+    margin-right: 0;
+  }
+  .slider-subscribe {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .slider-subscribe .form-half {
+    width: 100%;
+  }
+  .slider-subscribe button {
+    margin-left: auto;
+    margin-top: 15px;
+  }
+  .slider-detail {
+    padding: 20px 0 35px 0;
+  }
+  .lamp1 {
+    height: 480px;
+    right: 16%;
+  }
+  .lamp2 {
+    display: none;
+  }
+  .text-notice {
+    align-items: flex-start;
+    margin-top: 40px;
   }
 }
 
@@ -1473,7 +1560,11 @@
     margin-top: 10px;
   }
   .main-slider-item {
-    padding-top: 250px;
+    padding-top: 230px;
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
   .slider-title {
     padding-bottom: 15px;
@@ -1482,7 +1573,7 @@
     font-size: 36px;
   }
   .slider-nav-btn {
-    top: 225px;
+    top: 200px;
   }
   .slider-detail-content {
     flex-direction: column;
@@ -1515,10 +1606,6 @@
   }
   .slider-detail {
     padding: 15px 0 30px 0;
-  }
-  .main-slider {
-    min-height: initial;
-    height: fit-content;
   }
   .quality {
     padding: 30px 0 20px 0;
@@ -1892,7 +1979,7 @@
     display: none;
   }
   .provider {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .indicators-nav {
     margin-top: 10px;
@@ -1976,19 +2063,21 @@
   }
   .lumina-add {
     flex-direction: column;
+    margin-top: 40px;
   }
-  .lumina-add .add-right {
+  .lumina-add .add-left {
     order: 1;
     width: 70%;
     margin-left: 15%;
   }
-  .lumina-add .add-right::before {
+  .lumina-add .add-left::before {
     content: none;
   }
-  .lumina-add .add-left {
+  .lumina-add .add-right {
     width: 100%;
     order: 2;
     margin-top: 15px;
+    margin-left: 0;
   }
   .lumina-add .main-text {
     margin-top: 5px;
@@ -2062,15 +2151,12 @@
   .project-card-wrapper {
     margin: -7.5px;
   }
-  .projects-tab-content .project-card {
+  .project-card {
     margin: 7.5px;
     width: calc(50% - 15px);
     height: 180px;
     padding: 20px;
   }
-
-
-
   .project-info-text p {
     font-size: 16px;
     line-height: 120%;
@@ -2188,5 +2274,58 @@
   }
   .map {
     height: 200px;
+  }
+  .slider-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .slider-bottom h6 {
+    order: 1;
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+  }
+  .slider-bottom .learn-more-link {
+    order: 2;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .slider-subscribe {
+    display: none;
+  }
+  .slider-bottom button {
+    width: 100%;
+  }
+  .lamp1 {
+    height: 375px;
+    width: 150px;
+    right: 16%;
+  }
+  .lamp1:after {
+    right: 17px;
+  }
+  .lamp2 {
+    display: none;
+  }
+  .text-notice {
+    flex-direction: column;
+  }
+  .text-notice-img {
+    order: 1;
+    width: 80%;
+    margin-left: 0;
+  }
+  .text-notice-caption {
+    order: 2;
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+
+//additional media queries
+@media (min-width: 1200px) {
+  .slider-title h2 {
+    white-space: nowrap;
   }
 }

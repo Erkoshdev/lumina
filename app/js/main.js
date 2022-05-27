@@ -23,7 +23,6 @@ $(document).ready(function () {
   if ($(window).width() > 991) {
     $('.tide').addClass('container-cut')
   }
-
 })
 
 //Открыть меню на mobile

@@ -192,12 +192,12 @@ header.header-light {
 //***************************main-wrapper******************************
 .main-slider {
   width: 100%;
-  min-height: 740px;
   margin-top: -110px;
 }
 
 .main-slider-item {
   padding-top: 450px;
+  height: 100%;
 }
 
 .slider-nav-btn {
@@ -249,13 +249,26 @@ header.header-light {
 
 .slider-title h2 {
   font-weight: 500;
-  font-size: 102px;
+  font-size: 90px;
   line-height: 110%;
   color: #FFFFFF;
+  margin-right: 40px;
+  position: relative;
+  width: fit-content;
+}
+
+.slider-title .next-slide-text {
+  color: #A0A0A0;
+  display: block;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 40px);
 }
 
 .slider-detail {
-  padding: 30px 0 50px 0;
+  padding: 35px 0 55px 0;
+  position: relative;
 }
 
 .slider-detail-content {
@@ -301,6 +314,79 @@ header.header-light {
 
 .slide-1 {
   background: url("../img/content/slide1.png") no-repeat center/cover;
+  position: relative;
+}
+
+.slide-2 {
+  background: url("../img/content/slide2.png") no-repeat center/cover;
+}
+
+.slide-3 {
+  background: url("../img/content/slide3.png") no-repeat center/cover;
+}
+
+.lamp1 {
+  position: absolute;
+  bottom: 0;
+  right: 28%;
+  width: 190px;
+  height: 528px;
+}
+
+.lamp1:before {
+  content: '';
+  background: linear-gradient(180deg, #FFFFFF 0%, #FF671D 100%);
+  filter: blur(4px);
+  width: 51px;
+  height: 6px;
+  position: absolute;
+  top: 6.7%;
+  left: 13.7%;
+}
+
+.lamp1:after {
+  content: '';
+  background: url("../img/content/lamp1-light.png");
+  position: absolute;
+  right: 23%;
+  top: 0;
+  width: 336px;
+  height: 494px;
+}
+
+.lamp2:before {
+  content: '';
+  background: linear-gradient(180deg, #FFFFFF 0%, #FF671D 100%);
+  filter: blur(4px);
+  width: 75px;
+  height: 8px;
+  position: absolute;
+  top: 5.7%;
+  left: 13.7%;
+  border-radius: 50%;
+}
+
+.lamp2:after {
+  content: '';
+  background: url("../img/content/lamp2-light.png");
+  position: absolute;
+  right: 3%;
+  top: 2%;
+  width: 495px;
+  height: 726px;
+}
+
+.lamp2 {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  width: 224px;
+  height: 100%;
+}
+
+.lamp1 img, .lamp2  img {
+  width: 100%;
+  height: 100%;
 }
 
 .quality {
@@ -567,6 +653,12 @@ header.header-light {
   object-fit: cover;
 }
 
+.brand-card .vision-brands-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .vision-brands-caption {
   padding: 25px 30px 40px 30px;
 }
@@ -592,9 +684,15 @@ header.header-light {
 
 .vision-logo {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 30px;
+  left: 24px;
+  width: 98px;
+  height: 38px;
+}
+
+.vision-logo img {
+  width: 100%;
+  height: 100%;
 }
 
 .brand-card .vision-brands-img {
@@ -927,6 +1025,10 @@ header.header-light {
 .subscribe-lg-form input {
   background: #545D6B;
   color: #fff;
+}
+
+.subscribe-lg-form input + input:not(.form-half input + input) {
+  margin-top: 12px;
 }
 
 .subscribe-lg-form input::placeholder {
@@ -1437,10 +1539,13 @@ footer {
 .lumina-add {
   display: flex;
   justify-content: space-between;
+  margin-top: 80px;
 }
 
 .lumina-add .add-left {
   width: 50%;
+  position: relative;
+  z-index: 1;
 }
 
 .lumina-add .main-text {
@@ -1477,13 +1582,13 @@ footer {
   position: relative;
 }
 
-.add-right img {
+.add-left img {
   width: 100%;
   height: auto;
   position: relative;
 }
 
-.lumina-add .add-right:before {
+.lumina-add .add-left:before {
   content: '';
   position: absolute;
   top: 48%;
@@ -1577,14 +1682,14 @@ footer {
 .project-card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin: -17.5px;
+  margin: -15px;
   position: relative;
 }
 
-.projects-tab-content .project-card {
-  width: calc(33.3% - 35px);
-  margin: 17.5px;
-  height: 265px;
+.project-card {
+  width: calc(25% - 30px);
+  margin: 15px;
+  height: 240px;
   position: relative;
   padding: 24px;
   border-radius: 16px;
@@ -1593,7 +1698,7 @@ footer {
   align-items: flex-end;
 }
 
-.projects-tab-content .project-card img {
+.project-card img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1602,7 +1707,7 @@ footer {
   object-fit: cover;
 }
 
-.projects-tab-content .project-card p {
+.project-card p {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
@@ -1803,6 +1908,10 @@ footer {
   background: #FAFAFA;
 }
 
+.subscribe-md-form input + input:not(.form-half input + input) {
+  margin-top: 12px;
+}
+
 .subscribe-md-form input::placeholder {
   color: #99A4B5;
 }
@@ -1873,9 +1982,83 @@ footer {
   height: 340px;
 }
 
+//added styles
+.slider-bottom {
+  display: flex;
+  align-items: center;
+}
 
+.slider-bottom h6 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-left: 40px;
+  max-width: 280px;
+  margin-right: 40px;
+}
 
+.slider-subscribe {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
 
+.slider-subscribe input {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #FFFFFF;
+}
+
+.slider-subscribe input::placeholder {
+  color: #FFFFFF;
+}
+
+.slider-subscribe button {
+  margin-left: 10px;
+}
+
+.partners-list-item {
+  position: relative;
+}
+
+.text-notice {
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+}
+
+.text-notice-caption {
+  width: 57%;
+}
+
+.text-notice-caption h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  color: #333333;
+}
+
+.text-notice-caption p {
+  margin-top: 19px;
+}
+
+.text-notice-img {
+  width: calc(43% - 50px);
+  margin-left: 50px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.text-notice-img img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+
+.animate__fadeInDown, animate__fadeInUp {
+  --animate-duration: 0.8s;
+}
 
 
 @import "media";
