@@ -6,6 +6,7 @@
   <title>Lumina</title>
   <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
   <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/lightgallery.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -121,10 +122,16 @@
       </div>
       <div class="project-info-gallery">
         <h6>Process</h6>
-        <div class="project-gallery">
-          <img src="img/content/gallery1.png" alt="">
-          <img src="img/content/gallery2.png" alt="">
-          <img src="img/content/gallery3.png" alt="">
+        <div class="project-gallery" id="projectGallery">
+          <a href="img/content/gallery1.png">
+            <img src="img/content/gallery1.png" alt="">
+          </a>
+          <a href="img/content/gallery2.png">
+            <img src="img/content/gallery2.png" alt="">
+          </a>
+          <a href="img/content/gallery3.png">
+            <img src="img/content/gallery3.png" alt="">
+          </a>
         </div>
       </div>
     </div>
@@ -264,8 +271,12 @@
 </footer>
 
 <script src="js/libs.min.js"></script>
+<script src="js/lightgallery.min.js"></script>
 <script src="js/main.js"></script>
 <script>
+  lightGallery(document.getElementById('projectGallery'), {
+    thumbnail: true,
+  });
 
 </script>
 </body>

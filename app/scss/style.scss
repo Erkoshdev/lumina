@@ -346,9 +346,10 @@ header.header-light {
 
 .lamp1:after {
   content: '';
-  background: url("../img/content/lamp1-light.png");
+  background: url("../img/content/lamp1-light.png") no-repeat center/cover;
+  //background-size: cover;
   position: absolute;
-  right: 23%;
+  right: 3%;
   top: 0;
   width: 336px;
   height: 494px;
@@ -2056,7 +2057,7 @@ footer {
   max-height: 400px;
 }
 
-.animate__fadeInDown, animate__fadeInUp {
+.animate__fadeInDown, .animate__fadeInUp {
   --animate-duration: 0.8s;
 }
 

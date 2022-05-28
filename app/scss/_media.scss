@@ -264,9 +264,10 @@
     visibility: hidden;
     transition: 0.3s ease;
     opacity: 0;
-    padding: 0 40px;
+    padding: 10px 40px;
     background: #fff;
     border-radius: 15px;
+    box-shadow: 0 40px 120px rgba(3, 28, 70, 0.1);
   }
   .header-nav.show {
     visibility: visible;
@@ -732,6 +733,15 @@
   .text-notice {
     align-items: flex-start;
     margin-top: 40px;
+  }
+  .lamp1 {
+    height: 450px;
+  }
+  .lamp2 {
+    right: 5%;
+  }
+  .projects-item {
+    height: 220px;
   }
 }
 
@@ -1410,7 +1420,7 @@
     min-height: 60px;
   }
   .header-logo img {
-    max-width: 90px;
+    max-width: 120px;
   }
   .mobile-menu {
     position: fixed;
@@ -1421,7 +1431,7 @@
     margin: 0;
     z-index: 10;
     flex-direction: column;
-    padding: 0 15px 20px 15px;
+    padding: 20px 15px 20px 15px;
     transition: 0.3s ease;
     visibility: hidden;
     opacity: 0;
@@ -1442,6 +1452,7 @@
   }
   .header-nav a {
     padding: 15px 0;
+    font-size: 16px;
   }
   header.header-light .header-nav a {
     color: #333;
@@ -1464,6 +1475,11 @@
   .header-callback {
     margin-left: 0;
     margin-top: 15px;
+    min-width: 170px;
+    text-align: center;
+  }
+  .header-callback span {
+    font-size: 16px;
   }
   .show-mobile-menu {
     display: flex;
@@ -1611,7 +1627,7 @@
     padding: 30px 0 20px 0;
   }
   .main-title {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 120%;
   }
   .quality-title .main-title {
@@ -1624,7 +1640,7 @@
     padding: 5px 10px;
   }
   .tooltip-white span {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 120%;
   }
   .tooltip-white::after {
@@ -1639,7 +1655,7 @@
   }
   .lighting-design {
     top: -4%;
-    left: 20%;
+    left: 19%;
   }
   .lux-Calculation {
     top: 29%;
@@ -1647,7 +1663,7 @@
   }
   .installation-support {
     top: 50%;
-    left: 34%;
+    left: 32%;
   }
   .boq {
     top: 30%;
@@ -1668,11 +1684,11 @@
     margin-top: 15px;
   }
   .quality-card-item h6 {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 7px;
   }
   .quality-card-item p {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 4px;
   }
   .subscribe-sm-content {
@@ -1853,9 +1869,6 @@
     margin-left: 0;
     margin-top: 12px;
   }
-  .input-text {
-    padding: 9px 12px;
-  }
   .subscribe-lg h2 {
     font-size: 24px;
     line-height: 120%;
@@ -1921,7 +1934,7 @@
     width: 100%;
   }
   .complex-notice .main-title {
-    font-size: 17px;
+    font-size: 20px;
     padding-left: 15px;
   }
   .complex-notice .main-title::before {
@@ -1931,16 +1944,16 @@
     margin-top: 5px;
   }
   .main-text {
-    font-size: 13px;
+    font-size: 14px;
   }
   .partners {
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .partners-list-item + .partners-list-item {
     margin-left: 15px;
   }
   .partners-list img {
-    max-height: 25px;
+    max-height: 35px;
   }
   .notice-card {
     margin-top: 30px;
@@ -2056,7 +2069,7 @@
     font-size: 22px;
   }
   .service-page .subscribe-lg {
-    margin-top: 30px;
+    margin-top: 60px;
   }
   .service-page {
     padding-bottom: 30px;
@@ -2188,13 +2201,13 @@
     margin: 5px;
   }
   .insight-date span {
-    font-size: 12px;
+    font-size: 14px;
   }
   .insight-text {
     margin-top: 5px;
   }
   .insight-text p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .insights-list {
     margin: 10px -5px -5px -5px;
@@ -2211,10 +2224,13 @@
     margin-top: 10px;
   }
   .insight-content-text p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .insight-content-text p + p {
     margin-top: 14px;
+  }
+  .insight-content-date span {
+    font-size: 15px;
   }
   .insight-content {
     padding-bottom: 30px;
@@ -2273,7 +2289,7 @@
     width: 100%;
   }
   .map {
-    height: 200px;
+    height: 300px;
   }
   .slider-bottom {
     flex-direction: column;
@@ -2302,7 +2318,7 @@
     right: 16%;
   }
   .lamp1:after {
-    right: 17px;
+    right: -25px;
   }
   .lamp2 {
     display: none;
@@ -2319,6 +2335,10 @@
     order: 2;
     margin-top: 15px;
     width: 100%;
+  }
+  .btn-custom {
+    min-height: 44px;
+    font-size: 16px;
   }
 }
 
