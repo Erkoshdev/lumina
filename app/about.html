@@ -6,6 +6,7 @@
   <title>Lumina</title>
   <link rel="icon" type="image/x-icon" href="img/logo/favicon.ico">
   <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -103,7 +104,7 @@
       <li>About us</li>
     </ul>
     <div class="complex-notice">
-      <div class="complex-notice-caption">
+      <div class="complex-notice-caption animate__animated animate__fadeInLeft">
         <h2 class="main-title">“Quality is never an accident. It is always the result of intelligent effort.”</h2>
         <div class="notice-caption-item">
           <p class="main-text">Lumina Lighting Trading LLC is the flagship company of the 27 year old leading
@@ -132,7 +133,7 @@
           </ul>
         </div>
       </div>
-      <div class="complex-notice-img">
+      <div class="complex-notice-img animate__animated animate__fadeInRight">
         <img src="img/content/quality-img.png" alt="">
       </div>
     </div>
@@ -383,9 +384,18 @@
 </footer>
 
 <script src="js/libs.min.js"></script>
+<script src="js/scrollreveal.min.js"></script>
 <script src="js/main.js"></script>
 <script>
-
+  ScrollReveal().reveal(".provider-scheme", {duration: 2e3, distance: "50px", origin: "bottom", delay: 550, mobile: !1}),
+      ScrollReveal().reveal(".provider .main-title, .provider .indicators-nav", {
+        duration: 1e3,
+        distance: "50px",
+        origin: "bottom",
+        interval: 100,
+        mobile: !1,
+        delay: 1550
+      });
 </script>
 </body>
 </html>

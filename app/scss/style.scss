@@ -141,9 +141,42 @@ header.header-light {
   bottom: 0;
 }
 
+.header-nav a:after {
+  content: '';
+  background: #FF671D;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  transition: 0.3s ease;
+}
+
+.header-nav a:hover:after {
+  width: calc(100% + 45px);
+}
+
 .header-phone {
   display: flex;
   margin-left: 30px;
+}
+
+.header-phone:hover {
+  svg {
+    animation-name: call;
+    animation-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+  }
+}
+
+@keyframes call {
+  0% {transform: rotate(0deg)}
+  25% {transform: rotate(-30deg)}
+  50% {transform: rotate(0deg)}
+  75% {transform: rotate(30deg)}
+  100% {transform: rotate(0deg)}
 }
 
 .header-phone-numbers {
@@ -196,7 +229,7 @@ header.header-light {
 }
 
 .main-slider-item {
-  padding-top: 450px;
+  padding-top: 350px;
   height: 100%;
 }
 
@@ -204,7 +237,7 @@ header.header-light {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 390px;
+  top: 320px;
 }
 
 .swiper-button-prev:after, .swiper-button-next:after {
@@ -377,6 +410,15 @@ header.header-light {
   height: 726px;
 }
 
+.lamp2.not-light, .lamp1.not-light {
+  &:before {
+    opacity: 0;
+  }
+  &:after {
+    opacity: 0;
+  }
+}
+
 .lamp2 {
   position: absolute;
   bottom: 0;
@@ -508,7 +550,8 @@ header.header-light {
   padding: 16px 18px 19px 16px;
   background: #FFFFFF;
   border-radius: 8px;
-  box-shadow: 0 10px 25px rgb(0 0 0 / 30%)
+  box-shadow: 0 10px 25px rgb(0 0 0 / 30%);
+  z-index: 2;
 }
 
 .tooltip-white span {
@@ -652,12 +695,18 @@ header.header-light {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.7s ease;
 }
 
 .brand-card .vision-brands-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.7s ease;
+}
+
+.vision-brands-card:hover .vision-brands-img img:not(.vision-logo) {
+  transform: scale(1.15);
 }
 
 .vision-brands-caption {
@@ -814,6 +863,7 @@ header.header-light {
   padding: 24px;
   display: flex;
   align-items: flex-end;
+  user-select: none;
 }
 
 .projects-item img {
@@ -903,6 +953,7 @@ header.header-light {
   border-radius: 16px;
   padding: 35px 15px 35px 35px;
   height: fit-content!important;
+  user-select: none;
 }
 
 .insight-item-top {
@@ -1064,6 +1115,11 @@ header.header-light {
   border-radius: 16px;
   overflow: hidden;
   position: relative;
+  transition: 0.3s ease;
+}
+
+.news-card:hover {
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
 }
 
 .news-card-img {
@@ -1127,6 +1183,24 @@ footer {
   line-height: 17px;
   text-transform: uppercase;
   color: #FFFFFF;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-nav a:after {
+  content: "";
+  background: #ff671d;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  transition: .3s ease;
+}
+
+.footer-nav a:hover:after {
+  width: calc(100% + 25px);
 }
 
 .footer-phone {
@@ -1186,6 +1260,10 @@ footer {
   display: flex;
   align-items: center;
   height: fit-content;
+}
+
+.footer-social a:hover svg path {
+  fill: rgba(255, 255, 255, 0.6)
 }
 
 .footer-social li + li {
@@ -1706,6 +1784,11 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.7s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
 }
 
 .project-card p {
@@ -1787,6 +1870,11 @@ footer {
   border-radius: 16px;
   padding: 23px 30px;
   position: relative;
+  transition: 0.4s ease;
+}
+
+.insights-item:hover {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .insight-date span {
@@ -1940,6 +2028,11 @@ footer {
   display: flex;
   align-items: center;
   padding: 22px 20px;
+  transition: 0.3s ease;
+}
+
+.contact-link:hover {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .contact-link-img {
@@ -2058,7 +2151,47 @@ footer {
 }
 
 .animate__fadeInDown, .animate__fadeInUp {
+  --animate-duration: 1s;
+}
+
+.slider-title h2 {
+  opacity: 0;
+}
+
+.slider-title h2.animate__fadeInRight {
+  opacity: 1;
+}
+
+.animate__fadeInRight {
   --animate-duration: 0.8s;
+  --animate-delay: 10s;
+}
+
+.switch-btn {
+  position: absolute;
+  width: 18px;
+  height: 55px;
+  border: 2px solid #fff;
+  left: 51%;
+  top: 270px;
+  cursor: pointer;
+  z-index: 1;
+  background: transparent;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+.switch-btn:before {
+  content: '';
+  height: 500px;
+  border-left: 2px dashed #fff;
+  position: absolute;
+  top: -500px;
+  left: calc(50% - 1px);
+}
+
+.switch-btn:active {
+  transform: translateY(25px);
 }
 
 

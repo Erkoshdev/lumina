@@ -20,6 +20,11 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.btn-custom:hover {
+  background: #ff2f1d;
 }
 
 .main-title {

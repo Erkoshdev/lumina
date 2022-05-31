@@ -248,6 +248,9 @@
     margin-top: 30px;
     justify-content: center;
   }
+  .switch-btn {
+    top: 250px;
+  }
 }
 
 //tablets
@@ -742,6 +745,12 @@
   }
   .projects-item {
     height: 220px;
+  }
+  .switch-btn {
+    top: 170px;
+    left: 40%;
+    height: 50px;
+    width: 17px;
   }
 }
 
@@ -1403,6 +1412,12 @@
   .text-notice {
     align-items: flex-start;
     margin-top: 40px;
+  }
+  .switch-btn {
+    top: 170px;
+    left: 40%;
+    height: 50px;
+    width: 17px;
   }
 }
 
@@ -2339,6 +2354,12 @@
   .btn-custom {
     min-height: 44px;
     font-size: 16px;
+  }
+  .switch-btn {
+    top: 150px;
+    left: 37%;
+    height: 40px;
+    width: 15px;
   }
 }
 
