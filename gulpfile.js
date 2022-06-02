@@ -73,6 +73,7 @@ function build() {
       'app/fonts/**/*',
       'app/js/**/*.js',
       'app/*.html',
+      'app/video/**/*'
   ], {base: 'app'})
       .pipe(dest('dist'))
 }
