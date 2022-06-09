@@ -2470,6 +2470,13 @@
   .insight-content img {
     max-height: 170px;
   }
+  .header-top-contacts {
+    flex-direction: column;
+  }
+  .header-top-contacts li + li {
+    margin-left: 0;
+    margin-top: 5px;
+  }
 }
 
 @media(min-width: 1200px) {

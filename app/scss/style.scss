@@ -712,6 +712,7 @@ header.header-light {
   position: relative;
   height: 195px;
   width: 100%;
+  overflow: hidden;
 }
 
 .vision-card .vision-brands-img img:not(.vision-logo) {
@@ -2100,6 +2101,11 @@ footer {
   margin-top: 50px;
   width: 100%;
   height: 340px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 //added styles
