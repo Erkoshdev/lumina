@@ -258,7 +258,7 @@
             <input class="input-text" type="text" placeholder="Name">
             <input class="input-text" type="email" placeholder="Mail">
           </div>
-          <button class="btn-custom">Lets work together!</button>
+          <button type="button" class="btn-custom" data-bs-toggle="modal" data-bs-target="#successModal">Lets work together!</button>
         </form>
       </div>
     </div>
@@ -684,6 +684,32 @@
     </div>
   </div>
 </footer>
+
+<div class="modal fade success-modal" id="successModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-plain modal-close" data-bs-dismiss="modal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 5.46967C5.76256 5.17678 6.23744 5.17678 6.53033 5.46967L12 10.9393L17.4697 5.46967C17.7626 5.17678 18.2374 5.17678 18.5303 5.46967C18.8232 5.76256 18.8232 6.23744 18.5303 6.53033L13.0607 12L18.5303 17.4697C18.8232 17.7626 18.8232 18.2374 18.5303 18.5303C18.2374 18.8232 17.7626 18.8232 17.4697 18.5303L12 13.0607L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L10.9393 12L5.46967 6.53033C5.17678 6.23744 5.17678 5.76256 5.46967 5.46967Z" fill="#22282F"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="check-orange">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 32C9.5 19.5736 19.5736 9.5 32 9.5C35.5948 9.5 38.9887 10.3419 41.9991 11.838C42.741 12.2067 43.6413 11.9041 44.0099 11.1623C44.3786 10.4204 44.0761 9.52012 43.3342 9.15145C39.9182 7.45384 36.0683 6.5 32 6.5C17.9167 6.5 6.5 17.9167 6.5 32C6.5 46.0833 17.9167 57.5 32 57.5C46.0833 57.5 57.5 46.0833 57.5 32C57.5 31.0435 57.4473 30.0987 57.3444 29.1685C57.2534 28.3451 56.5121 27.7514 55.6887 27.8424C54.8653 27.9334 54.2716 28.6747 54.3626 29.4981C54.4534 30.3191 54.5 31.1538 54.5 32C54.5 44.4264 44.4264 54.5 32 54.5C19.5736 54.5 9.5 44.4264 9.5 32ZM57.0607 14.394C57.6464 13.8082 57.6464 12.8585 57.0607 12.2727C56.4749 11.6869 55.5251 11.6869 54.9393 12.2727L32 35.212L25.0607 28.2727C24.4749 27.6869 23.5251 27.6869 22.9393 28.2727C22.3536 28.8585 22.3536 29.8082 22.9393 30.394L30.9393 38.394C31.2206 38.6753 31.6022 38.8333 32 38.8333C32.3978 38.8333 32.7794 38.6753 33.0607 38.394L57.0607 14.394Z" fill="#FF671D"/>
+          </svg>
+        </div>
+        <h1>Thank you</h1>
+        <p>your application has been accepted, we will contact you as soon as possible</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-custom" data-bs-dismiss="modal">Go further!</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/libs.min.js"></script>
 <script src="js/swiper.bundle.min.js"></script>
